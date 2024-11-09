@@ -1,0 +1,87 @@
+nav {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Align items vertically centered */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Display list items in a row */
+  margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.5rem 1rem; /* Add padding for better border visibility */
+  border: 2px solid transparent; /* Add border with transparent color */
+  border-radius: 4px; /* Optional: rounded corners */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  text-decoration: none; /* Remove underline for active link */
+  background-color: #555; /* Change background color for active link */
+  border-color: #f4f4f4; /* Change border color for active link */
+  color: #fff; /* Ensure text color is readable */
+}
+
+/* Specific styles for the logout button */
+nav .logout-button {
+  text-decoration: none;
+  background-color: #dc35b2; /* Bootstrap's danger color for logout */
+  border-color: #dc3545; /* Matching border color for logout button */
+  color: white; 
+  margin-left: 0;
+  padding: 0.5rem 1rem; /* Add padding for better border visibility */
+  border: 2px solid transparent; /* Add border with transparent color */
+  border-radius: 4px; /* Optional: rounded corners */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+
+nav .logout-button:hover {
+  background-color: #c82333; /* Darker shade of danger color on hover */
+  border-color: #c82333; /* Matching border color on hover */
+  color: white; /* Ensure text color is readable */
+}
+
+/* Ensure the logout button is aligned to the left */
+nav .logout-container {
+  margin-left: auto; /* Push logout button to the right */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+} 
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
